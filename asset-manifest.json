@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/InnReserve-Booking-System/static/js/main.deb45b83.js",
+    "index.html": "/InnReserve-Booking-System/index.html",
+    "main.deb45b83.js.map": "/InnReserve-Booking-System/static/js/main.deb45b83.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.deb45b83.js"
+  ]
+}
