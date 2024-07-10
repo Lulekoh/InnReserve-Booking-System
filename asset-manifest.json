@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/InnReserve-Booking-System/static/js/main.deb45b83.js",
+    "main.css": "/InnReserve-Booking-System/static/css/main.f51cd021.css",
+    "main.js": "/InnReserve-Booking-System/static/js/main.4f7ba41b.js",
     "index.html": "/InnReserve-Booking-System/index.html",
-    "main.deb45b83.js.map": "/InnReserve-Booking-System/static/js/main.deb45b83.js.map"
+    "main.f51cd021.css.map": "/InnReserve-Booking-System/static/css/main.f51cd021.css.map",
+    "main.4f7ba41b.js.map": "/InnReserve-Booking-System/static/js/main.4f7ba41b.js.map"
   },
   "entrypoints": [
-    "static/js/main.deb45b83.js"
+    "static/css/main.f51cd021.css",
+    "static/js/main.4f7ba41b.js"
   ]
 }
