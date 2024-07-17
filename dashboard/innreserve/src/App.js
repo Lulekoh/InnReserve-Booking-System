@@ -4,7 +4,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
+import image3 from './images/image3.jpg';D
+
+// Import statements
+import Navbar from './components/Navbar';
+import './App.css';
 
 const basename = '/InnReserve-Booking-System';
 
