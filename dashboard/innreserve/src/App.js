@@ -11,9 +11,6 @@ import BookingState from './context/BookingState';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
 
 const basename = '/InnReserve-Booking-System';
 
@@ -70,18 +67,7 @@ const Home = () => {
           <button className="sign-in-button facebook" onClick={() => handleSignIn('Facebook')}>Sign in with Facebook</button>
         </div>
       </div>
-      <main>
-        <div className="images-container">
-          <div className="image-frame">
-            <img src={image1} alt="Food" />
-          </div>
-          <div className="image-frame">
-            <img src={image2} alt="Restaurant" />
-          </div>
-          <div className="image-frame">
-            <img src={image3} alt="Bed" />
-          </div>
-        </div>
+
         <p className="message">{message}</p>
         <ul className="bookings-list">
           {bookings.map((booking, index) => (
