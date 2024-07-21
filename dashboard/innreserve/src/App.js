@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
@@ -17,11 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const basename = '/InnReserve-Booking-System';
 
-if (localStorage.token) {
-  setAuthToken(localStorage.token);
-}
-
-const App = () => {
+function App() {
   const [bookings, setBookings] = useState([]);
   const [bookingName, setBookingName] = useState('');
   const [message, setMessage] = useState('');
@@ -50,65 +46,86 @@ const App = () => {
   };
 
   return (
+    <div className="App">
+      <Router basename={basename}>
+        <Switch>
+          <Route exact path="/">
+            <div className="App">
+              <header className="App-header">
+                <h1>InnReserve Booking System</h1>
+              </header>
+              <div className="top-bar">
+                <form className="booking-form" onSubmit={(e) => { e.preventDefault(); addBooking(); }}>
+                  <input
+                    type="text"
+                    value={bookingName}
+                    onChange={(e) => setBookingName(e.target.value)}
+                    placeholder="Enter booking name"
+                    className="booking-input"
+                  />
+                  <button type="submit" className="submit-button">Add Booking</button>
+                </form>
+                <div className="sign-in-buttons">
+                  <button className="sign-in-button google" onClick={() => handleSignIn('Google')}>Sign in with Google</button>
+                  <button className="sign-in-button facebook" onClick={() => handleSignIn('Facebook')}>Sign in with Facebook</button>
+                </div>
+              </div>
+              <main>
+                <div className="images-container">
+                  <div className="image-frame">
+                    <img src={image1} alt="Image 1" />
+                  </div>
+                  <div className="image-frame">
+                    <img src={image2} alt="Image 2" />
+                  </div>
+                  <div className="image-frame">
+                    <img src={image3} alt="Image 3" />
+                  </div>
+                </div>
+                <p className="message">{message}</p>
+                <ul className="bookings-list">
+                  {bookings.map((booking, index) => (
+                    <li key={index} className="booking-item">{booking}</li>
+                  ))}
+                </ul>
+              </main>
+              <Navbar />
+              <div className="container">
+                <h1>Welcome to InnReserve</h1>
+                {/* Add more components or content here */}
+              </div>
+            </div>
+          </Route>
+          <Route path="/about">
+            {/* About page component */}
+          </Route>
+          {/* Add more routes as needed */}
+        </Switch>
+      </Router>
+    </div>
+
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
+
+const App = () => {
+  return (
     <AuthState>
       <BookingState>
-        <Router basename={basename}>
+        <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/bookings/new" element={<BookingForm />} />
-            <Route path="/bookings" element={<BookingList />} />
-            <Route
-              path="/home"
-              element={
-                <div className="App">
-                  <header className="App-header">
-                    <h1>InnReserve Booking System</h1>
-                  </header>
-                  <div className="top-bar">
-                    <form className="booking-form" onSubmit={(e) => { e.preventDefault(); addBooking(); }}>
-                      <input
-                        type="text"
-                        value={bookingName}
-                        onChange={(e) => setBookingName(e.target.value)}
-                        placeholder="Enter booking name"
-                        className="booking-input"
-                      />
-                      <button type="submit" className="submit-button">Add Booking</button>
-                    </form>
-                    <div className="sign-in-buttons">
-                      <button className="sign-in-button google" onClick={() => handleSignIn('Google')}>Sign in with Google</button>
-                      <button className="sign-in-button facebook" onClick={() => handleSignIn('Facebook')}>Sign in with Facebook</button>
-                    </div>
-                  </div>
-                  <main>
-                    <div className="images-container">
-                      <div className="image-frame">
-                        <img src={image1} alt="Image 1" />
-                      </div>
-                      <div className="image-frame">
-                        <img src={image2} alt="Image 2" />
-                      </div>
-                      <div className="image-frame">
-                        <img src={image3} alt="Image 3" />
-                      </div>
-                    </div>
-                    <p className="message">{message}</p>
-                    <ul className="bookings-list">
-                      {bookings.map((booking, index) => (
-                        <li key={index} className="booking-item">{booking}</li>
-                      ))}
-                    </ul>
-                  </main>
-                </div>
-              }
-            />
-          </Routes>
+          <section className="container">
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/bookings/new" element={<BookingForm />} />
+              <Route path="/bookings" element={<BookingList />} />
+            </Routes>
+          </section>
         </Router>
       </BookingState>
-    </AuthState>
+    </AuthState>5
   );
 };
 
