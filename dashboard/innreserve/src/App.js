@@ -10,12 +10,10 @@ import AuthState from './context/AuthState';
 import BookingState from './context/BookingState';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';D
+import image3 from './images/image3.jpg';
 
 // Import statements
 import Navbar from './components/Navbar';
