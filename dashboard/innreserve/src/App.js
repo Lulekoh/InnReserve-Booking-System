@@ -10,9 +10,6 @@ import AuthState from './context/AuthState';
 import BookingState from './context/BookingState';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const basename = '/InnReserve-Booking-System';
@@ -73,13 +70,13 @@ const Home = () => {
       <main>
         <div className="images-container">
           <div className="image-frame">
-            <img src={image1} alt="Image 1" />
+            <img src={image1} alt="Food" />
           </div>
           <div className="image-frame">
-            <img src={image2} alt="Image 2" />
+            <img src={image2} alt="Restaurant" />
           </div>
           <div className="image-frame">
-            <img src={image3} alt="Image 3" />
+            <img src={image3} alt="Bed" />
           </div>
         </div>
         <p className="message">{message}</p>
