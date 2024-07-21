@@ -33,15 +33,15 @@ const Landing = () => {
         </p>
       </div>
       <div className="image-gallery">
-        <img src={image1} alt="Image 1" />
-        <img src={image2} alt="Image 2" />
-        <img src={image3} alt="Image 3" />
-        <img src={image5} alt="Image 5" />
-        <img src={image7} alt="Image 7" />
-        <img src={image8} alt="Image 8" />
-        <img src={image9} alt="Image 9" />
-        <img src={image10} alt="Image 10" />
-        <img src={image11} alt="Image 11" />
+        <img src={image1} alt="Food" />
+        <img src={image2} alt="Dine" />
+        <img src={image3} alt="Bed" />
+        <img src={image5} alt="Pool" />
+        <img src={image7} alt="Room" />
+        <img src={image8} alt="Drinks" />
+        <img src={image9} alt="Lunch" />
+        <img src={image10} alt="Hotel" />
+        <img src={image11} alt="Wine" />
       </div>
     </div>
   );
