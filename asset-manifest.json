@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/InnReserve-Booking-System/static/css/main.f51cd021.css",
-    "main.js": "/InnReserve-Booking-System/static/js/main.4f7ba41b.js",
+    "main.css": "/InnReserve-Booking-System/static/css/main.eafb17bd.css",
+    "main.js": "/InnReserve-Booking-System/static/js/main.39c75488.js",
+    "static/media/image9.jpg": "/InnReserve-Booking-System/static/media/image9.0146a3e645e82fb767d3.jpg",
+    "static/media/image11.jpg": "/InnReserve-Booking-System/static/media/image11.86feb0bfd49a395c9b0e.jpg",
+    "static/media/image1.jpg": "/InnReserve-Booking-System/static/media/image1.b4c0fcb569ccb1e44221.jpg",
+    "static/media/image8.jpg": "/InnReserve-Booking-System/static/media/image8.d4610435afe975e0f7b9.jpg",
+    "static/media/image5.jpg": "/InnReserve-Booking-System/static/media/image5.cbdef9c075bfc584505f.jpg",
+    "static/media/image3.jpg": "/InnReserve-Booking-System/static/media/image3.c2fc164919bb62dfb62a.jpg",
+    "static/media/image10.jpg": "/InnReserve-Booking-System/static/media/image10.a25e9dfc6a9204109eec.jpg",
+    "static/media/image7.jpg": "/InnReserve-Booking-System/static/media/image7.28da505788344f38bf60.jpg",
+    "static/media/image2.jpg": "/InnReserve-Booking-System/static/media/image2.0568f1b2ff06bcaa5740.jpg",
     "index.html": "/InnReserve-Booking-System/index.html",
-    "main.f51cd021.css.map": "/InnReserve-Booking-System/static/css/main.f51cd021.css.map",
-    "main.4f7ba41b.js.map": "/InnReserve-Booking-System/static/js/main.4f7ba41b.js.map"
+    "main.eafb17bd.css.map": "/InnReserve-Booking-System/static/css/main.eafb17bd.css.map",
+    "main.39c75488.js.map": "/InnReserve-Booking-System/static/js/main.39c75488.js.map"
   },
   "entrypoints": [
-    "static/css/main.f51cd021.css",
-    "static/js/main.4f7ba41b.js"
+    "static/css/main.eafb17bd.css",
+    "static/js/main.39c75488.js"
   ]
 }
