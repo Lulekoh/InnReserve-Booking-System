@@ -10,14 +10,9 @@ import AuthState from './context/AuthState';
 import BookingState from './context/BookingState';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
-import Navbar from './components/Navbar';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
-
-// Import statements
-import Navbar from './components/Navbar';
-import './App.css';
 
 const basename = '/InnReserve-Booking-System';
 
