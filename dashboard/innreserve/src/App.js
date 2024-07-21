@@ -67,15 +67,13 @@ const Home = () => {
           <button className="sign-in-button facebook" onClick={() => handleSignIn('Facebook')}>Sign in with Facebook</button>
         </div>
       </div>
-
         <p className="message">{message}</p>
         <ul className="bookings-list">
           {bookings.map((booking, index) => (
             <li key={index} className="booking-item">{booking}</li>
           ))}
-        </ul>
-      </main>
-      <Navbar />
+        </ul> 
+	<Navbar />
       <div className="container">
         <h1>Welcome to InnReserve</h1>
         {/* Add more components or content here */}
