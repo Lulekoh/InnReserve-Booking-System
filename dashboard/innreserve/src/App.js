@@ -17,6 +17,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const basename = '/InnReserve-Booking-System';
 
+if (localStorage.token) {
+	setAuthToken(localStorage.token);
+}
+
 function App() {
   const [bookings, setBookings] = useState([]);
   const [bookingName, setBookingName] = useState('');
@@ -103,10 +107,6 @@ function App() {
         </Switch>
       </Router>
     </div>
-
-if (localStorage.token) {
-  setAuthToken(localStorage.token);
-}
 
 const App = () => {
   return (
